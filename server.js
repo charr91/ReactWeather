@@ -7,10 +7,10 @@ const PORT = process.env.PORT || 3000;
 // Using Express middleware to redirect https traffic to http,
 // because OpenWeatherMap free only supports http traffic.
 app.use(function (req, res, next) {
-  if (req.headers['x-forwarded-proto'] === 'http') {
-    next();
-  } else {
+  if (req.headers['x-forwarded-proto'] === 'https') {
     res.redirect('http://' + req.hostname + req.url);
+  } else {
+    next();
   }
 });
 
