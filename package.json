@@ -1,5 +1,5 @@
 {
-  "name": "boilerplate",
+  "name": "ReactWeather",
   "version": "1.0.0",
   "description": "Weather React App",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "author": "Cliff Harris",
+  "author": "Clifford Harris",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.13.1",
