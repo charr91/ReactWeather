@@ -8,12 +8,15 @@ var Weather = require('Weather');
 var About = require('About');
 var Examples = require('Examples');
 
+// Load 'loaders' with '...!'
+// This is necessary for Webpack to know how to process different types of files.
+
 // Load foundation
 require('style!css!foundation-sites/dist/foundation.min.css')
 $(document).foundation();
 
 // App css
-require('style!css!applicationStyles')
+require('style!css!sass!applicationStyles')
 
 ReactDOM.render(
   <Router history={hashHistory}>
